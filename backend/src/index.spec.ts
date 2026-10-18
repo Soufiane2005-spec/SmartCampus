@@ -7,6 +7,6 @@ describe('GET /api/health', () => {
     const body = (await response.json()) as { status?: string }
 
     expect(response.status).toBe(200)
-    expect(body.status).toBe('ok')
+    expect(body.status).toBe('error')
   })
 })

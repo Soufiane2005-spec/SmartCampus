@@ -1,4 +1,4 @@
-nano backend/src/index.spec.tsimport { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import app from './index'
 
 describe('GET /api/health', () => {

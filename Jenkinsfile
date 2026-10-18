@@ -24,5 +24,12 @@ pipeline {
                 }
             }
         }
+
+        stage('Archive') {
+            steps {
+                archiveArtifacts artifacts: 'backend/dist/**',
+                                 fingerprint: true
+            }
+        }
     }
 }
